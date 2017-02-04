@@ -1,50 +1,159 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Responsive website template for documentations</title>
+    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>SIOCX | A space on web of starkchen</title>
-    <!-- CSS -->
-    <link href="css/main.css" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <!-- 页头 -->
-    <div class="page-header" max-width:768px;>
-        <h1>Example page header<small>Subtext for header</small></h1>
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
     
-    <div class="progress" max-width:768px;>
-  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-    <span class="sr-only">60% Complete</span>
-  </div>
-</div>
-  <!-- 栅格系统练习 Bootstrap的栅格系统中总共分为12列，在相应的列之中填写相应的内容 -->
-  <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">.col-md-4</div>
-    <div class="col-md-4"></div>
-  </div>
-  <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">.col-md-4</div>
-    <div class="col-md-4"></div>
-  </div>
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head> 
 
-  <!-- jQuery放在最后面可以提高网页加载速度 -->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-  </body>  
-</html>
+<body class="landing-page">   
+     
+    <!--FACEBOOK LIKE BUTTON JAVASCRIPT SDK-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <div class="page-wrapper">
+        
+        <!-- ******Header****** -->
+        <header class="header text-center">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <span class="text-highlight">SIOCX</span>
+                    </h1>
+                </div><!--//branding-->
+                <div class="tagline">
+                    <p>知 行 合 一</p>
+                </div><!--//tagline-->
+            </div><!--//container-->
+        </header><!--//header-->
+        
+        <section class="cards-section text-center">
+            <div class="container">
+                <h2 class="title">You can know me in this way!</h2>
+                <div class="intro">
+                    <p></p>
+                    <div class="cta-container">
+                    </div><!--//cta-container-->
+                </div><!--//intro-->
+                <div id="cards-wrapper" class="cards-wrapper row">
+                    <!--博客卡片-->
+                    <div class="item item-green col-md-4 col-sm-6 col-xs-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <i class="icon fa fa-rss"></i>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Blog</h3>
+                            <p class="intro">知行合一践行地</p>
+                            <a class="link" href="https://blog.siocx.space"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <!--Github卡片-->
+                    <div class="item item-purple item-2 col-md-4 col-sm-6 col-xs-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" class="icon fa fa-github"></span>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">Github
+                            </h3>
+                            <p class="intro">全球最大代码托管网站</p>
+                            <a class="link" href="https://github.com/stark2chen"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <!--知乎卡片-->
+                    <div class="item item-blue col-md-4 col-sm-6 col-xs-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" class="icon icon_datareport_alt"></span>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">知乎</h3>
+                            <p class="intro">一个认真的抖激灵的网站</p>
+                            <a class="link" href="https://www.zhihu.com/people/starkchen/answers"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                </div><!--//cards-->
+                
+            </div><!--//container-->
+        </section><!--//cards-section-->
+         <section class="cards-section text-center">
+            <div class="container">
+                <h2 class="title">Project</h2>
+                <div class="intro">
+                    <p></p>
+                    <div class="cta-container">
+                    </div><!--//cta-container-->
+                </div><!--//intro-->
+                <div id="cards-wrapper" class="cards-wrapper row">
+                    <!--卡片-->
+                    <div class="item item-orange col-md-4 col-sm-6 col-xs-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <i class="icon fa fa-code-fork"></i>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">lite</h3>
+                            <p class="intro">基于Bootstrap的关于个人页面</p>
+                            <a class="link" href="https://github.com/Stark2Chen/lite"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <!--卡片-->
+                    <div class="item item-orange col-md-4 col-sm-6 col-xs-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <i class="icon fa fa-code-fork"></i>
+                            </div><!--//icon-holder-->
+                            <h3 class="title">MDL 中文文档</h3>
+                            <p class="intro">Material Design Lite中文文档</p>
+                            <a class="link" href="https://github.com/Stark2Chen/Material-Design-Lite-Docs-zh-CN-"><span></span></a>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                </div><!--//cards-->
+                
+            </div><!--//container-->
+        </section><!--//cards-section-->
+    </div><!--//page-wrapper-->
+    
+    <footer class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Copyright  <i class="fa fa-copyright"></i>  SIOCX 2017</small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>                                                                     
+    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+
