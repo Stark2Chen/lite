@@ -4,7 +4,7 @@
 
 a lite homepages of you. Based on mdui
 
-
+the oragin personal homepages is move to [https://coding.net/u/StarkChen/p/SIOCX-index/git](https://coding.net/u/StarkChen/p/SIOCX-index/git)
 
 一个基于MDUI的个人主页模板。
 
