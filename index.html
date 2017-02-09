@@ -6,21 +6,22 @@
     <title>lite</title>
     <!-- MDUI -->
     <link rel="stylesheet" href="https://okwerfqj4.qnssl.com/lib/mdui/mdui-v0.1.2/css/mdui.min.css">
+    <!-- ali iconfont -->
+    <link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-</head>
+</head> 
 
 <body class="mdui-theme-primary-grey mdui-theme-accent-grey mdui-appbar-with-toolbar mdui-appbar-with-tab-larger mdui-loaded">
-     <!-- header -->
+    <!-- 顶部导航栏 --> 
     <div class="mdui-appbar mdui-appbar-fixed">
-        <!-- appbar -->
         <div class="mdui-toolbar mdui-color-theme-800">
             <a class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}">
                 <i class="mdui-icon material-icons">&#xe5d2;</i>
             </a>
             <div class="mdui-toolbar-spacer"> </div>
-            <span class="mdui-typo-headline">lite</span>
+            <span class="mdui-typo-headline">SIOCX</span>
             <div class="mdui-toolbar-spacer"> </div>
             <a class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#share_menu'}">
                 <i class="mdui-icon material-icons">share</i>
@@ -30,11 +31,23 @@
                 </li>
             </ul>
         </div>
-        <!-- searchbar -->
-        <div id="searchbar" class="searchbar mdui-tab-centered mdui-toolbar mdui-color-grey-800 mdui-col-xs-12">
-            <form action="https://www.google.com/search" class="searchbar_form">
-            <input type="text" name="q" autocomplete="off" placeholder="Search" class="mdui-textfield-input searchbar_input">
-            </form>
+        <div class="mdui-tab mdui-color-theme-800 mdui-tab-centered" mdui-tab>
+            <a href="#home" class="mdui-ripple mdui-ripple-white mdui-tab-active">
+                <i class="mdui-icon material-icons">&#xe60e;</i>
+                <label>Home</label>
+            </a>
+            <a href="#links" class="mdui-ripple mdui-ripple-white mdui-tab-active">
+                <i class="mdui-icon material-icons">&#xe87d;</i>
+                <label>Friends</label>
+            </a>
+            <a href="#about" class="mdui-ripple mdui-ripple-white mdui-tab-active">
+                <i class="mdui-icon material-icons">&#xe8a3;</i>
+                <label>About</label>
+            </a>
+            <a href="#info" class="mdui-ripple mdui-ripple-white mdui-tab-active">
+                <i class="mdui-icon material-icons">&#xe068;</i>
+                <label>Info</label>
+            </a>
         </div>
     </div>
     <div class="mdui-drawer mdui-drawer-close mdui-drawer-scrollbar" id="left-drawer" style="overflow-y: hidden;">
@@ -45,7 +58,7 @@
                 </div>
                 <div class="mdui-card-media-covered">
                     <div class="mdui-card-primary">
-                        <div class="mdui-card-primary-title">SIOCX</div>
+                        <div class="mdui-card-primary-title">lite</div>
                         <div class="mdui-card-primary-subtitle">stark_chen@outlook.com</div>
                     </div>
                 </div>
@@ -71,59 +84,156 @@
         </ul>
     </div>
     <div class="mdui-container">
-        <!-- home page -->
-        <div id="home" style="display: none;"> <!-- in home tab -->
-
-
-        <!-- link page -->
-        <div id="links" style="display: none;">
+        <div id="home" style="display: none;">
+        <br>
             <div class="mdui-row">
-                <div class="mdui-col-xs-12 mdui-col-sm-6">
+                <div class="mdui-col-xs-12 mdui-col-sm-12">
+                <br>
+                    <!-- your avatar here -->
+                    <!-- if screen is smaller than sm, the avatar is show as 96px. -->
+                    <!-- if screen is larger than sm, the avatar is show as 144 px. -->
+                    <!-- please write down your avatar link twice, and you avatar must larger than 144 px -->
+                    <div class="mdui-hidden-sm-up">
+                        <img class="mdui-center" src="https://okwerfqj4.qnssl.com//image/logo/favicon.png" width="96px">
+                    </div>
+                    <div class="mdui-hidden-xs-down">
+                    <img class="mdui-center" src="https://okwerfqj4.qnssl.com//image/logo/favicon.png" width="144px">
+                    </div>
+                    <!-- your name and you tags here -->
+                    <div class="mdui-typo mdui-text-center">
+                        <!-- write down your name in here -->
+                        <div class="mdui-typo-headline">Your name here</div>
+                        <div class="mdui-card-content">
+                        <p>
+                            <div class="mdui-chip">
+                                <!-- write down your tags here -->
+                                <span class="mdui-chip-title">Your tags here</span>
+                            </div>
+                            
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- this modules is area to show your websites and project. In each `<div>`, you can show your project in website -->
+            <div class="mdui-row">
+                <div class="mdui-col-xs-12 mdui-col-sm-4">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                            <!-- here is your project image -->
+                            <img src="https://okwerfqj4.qnssl.com//image/img/blog-1.png"/>
+                            <div class="mdui-card-media-covered">
+                            <div class="mdui-card-primary">
+                                <!-- write down your project name in here -->
+                                <div class="mdui-card-primary-title">SIOCX Blog</div>
+                                <!-- write down your project slogan in here -->
+                                <div class="mdui-card-primary-subtitle">知行合一</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="mdui-card-actions">
+                            <!-- write down your project's link in href, and write down some message in "> <"" -->
+                            <a href="your links here" class="mdui-btn mdui-ripple">message</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdui-col-xs-12 mdui-col-sm-4">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                            <img src="https://okwerfqj4.qnssl.com//image/img/github.png"/>
+                            <div class="mdui-card-media-covered">
+                            <div class="mdui-card-primary">
+                                <div class="mdui-card-primary-title">Github</div>
+                                <div class="mdui-card-primary-subtitle">全球最大代码托管网站</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="mdui-card-actions">
+                            <a href="https://github.com/Stark2Chen" class="mdui-btn mdui-ripple">来star一发~</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdui-col-xs-12 mdui-col-sm-4">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                            <img src="card.jpg"/>
+                            <div class="mdui-card-media-covered">
+                            <div class="mdui-card-primary">
+                                <div class="mdui-card-primary-title">即将上线</div>
+                                <div class="mdui-card-primary-subtitle">敬请期待</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="mdui-card-actions">
+                            <button class="mdui-btn mdui-ripple">===</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="links" style="display: none;">
+        <br>
+            <div class="mdui-row">
+                <div class="mdui-col-xs-12 mdui-col-sm-8">
                     <ul class="mdui-list">
                     <li class="mdui-list-item mdui-ripple">
-                        <div class="mdui-list-item-avatar"><img src="https://okwerfqj4.qnssl.com//image/logo/favicon.ico"/></div>
+                        <div class="mdui-list-item-avatar"><img src="https://ooo.0o0.ooo/2016/12/23/585d119188d4f.png"/></div>
                         <div class="mdui-list-item-content">
-                        <div class="mdui-list-item-title">title</div>
-                        <div class="mdui-list-item-text mdui-list-item-one-line">subtitle</div>
+                        <div class="mdui-list-item-title">Viosey</div>
+                        <div class="mdui-list-item-text mdui-list-item-one-line">一生想做自由Geek</div>
+                        </div>
+                    </li>
+                    <li class="mdui-divider-inset mdui-m-y-0"></li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://ooo.0o0.ooo/2017/02/04/5895986042d5e.png"/></div>
+                        <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-title">冰凌胧月的后宫</div>
+                        <div class="mdui-list-item-text mdui-list-item-one-line">Welcome to disturb</div>
+                        </div>
+                    </li>
+                    <li class="mdui-divider-inset mdui-m-y-0"></li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://okr20nkt9.qnssl.com/avatar-c.png"/></div>
+                        <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-title">Halyul</div>
+                        <div class="mdui-list-item-text mdui-list-item-one-line">Never do a dreamer.</div>
                         </div>
                     </li>
                     </ul>
                 </div>
-                <div class="mdui-col-xs-12 mdui-col-sm-6">
+                <div class="mdui-col-xs-12 mdui-col-sm-4">
                     <div class="mdui-panel mdui-panel-gapless" mdui-panel>
                         <div class="mdui-panel-item">
-                            <div class="mdui-panel-item-header">your links info</div>
+                            <div class="mdui-panel-item-header">我的友链信息</div>
                             <div class="mdui-panel-item-body">
-                            <p>Name: lite</p>
-                            <p>Slogan: a lite homepages of you. Based on mdui</p>
-                            <p>Link: <a href="https://stark2chen.github.io/lite/">https://stark2chen.github.io/lite/</a></p>
+                            <p>Name: SIOCX</p>
+                            <p>Slogan: 知行合一</p>
+                            <p>Link: <a href="https://siocx.space">https://siocx.space</a></p>
                             <p>
                                 <div class="mdui-chip">
-                                    <!-- favicon -->
                                     <img class="mdui-chip-icon" src="https://okwerfqj4.qnssl.com//image/logo/favicon.ico"/>
-                                    <span class="mdui-chip-title">your favicon info</span>
+                                    <span class="mdui-chip-title">48*48 ico文件</span>
                                 </div>
                             </p>
                             </div>
                         </div>
                         <div class="mdui-panel-item">
-                            <div class="mdui-panel-item-header">apply link</div>
+                            <div class="mdui-panel-item-header">申请添加友链</div>
                             <div class="mdui-panel-item-body">
-                            <p> text area </p>
+                            <p>点击下面的按钮，在跳转的新页面中仔细阅读申请要求，并且按要求填写你的网站信息。</p>
+                            <p>处理完成后，我会通过你的邮件告知</p>
+                            <div class="mdui-panel-item-actions">
+                            <a href="https://blog.siocx.space/apply-link/" class="mdui-btn mdui-ripple">申请友链</a>
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- info page -->
-        <div id="info" style="display: none">
-            <div class="mdui-row">
-                <div class="mdui-col-xs-12 mdui-col-sm-6">
-                    <div class="mdui-list">
     </div>
-
-
+    
+    
     <footer>
         <div class="mdui-divider"> </div>
         <br>
@@ -132,9 +242,8 @@
         </div>
         <br>
     </footer>
-    <!-- MDUI Javascript -->
+    <!-- MDUI Javascript --> 
     <script type="text/javascript" src="https://okwerfqj4.qnssl.com/lib/mdui/mdui-v0.1.2/js/mdui.min.js"></script>
-    <!-- vue -->
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
 </body>
-</html>
+</html> 
+
