@@ -4,7 +4,7 @@
 
 a lite homepages of you. Based on mdui
 
-the oragin personal homepages is move to [https://coding.net/u/StarkChen/p/SIOCX-index/git](https://coding.net/u/StarkChen/p/SIOCX-index/git)
+演示：[https://www.siocx.space](https://www.siocx.space)s
 
 一个基于MDUI的个人主页模板。
 
@@ -31,3 +31,24 @@ add your files into folder and write down this in your html files
 ```
 
 path such as ./iconfont/iconfont.css
+
+---
+
+## 名词定义
+
+- _link
+
+- _name
+
+- _tags
+
+- _email
+
+- _avatar
+
+- _slogan
+
+- _email
+
+- _project
+
